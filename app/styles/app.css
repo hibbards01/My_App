@@ -1,0 +1,53 @@
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  color: #000;
+  background-color: #780000;
+  height: 80%;
+}
+
+body {
+  background-image: url("http://th09.deviantart.net/fs7/PRE/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg");
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px;
+}
+
+.button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#sidebar {
+  width: 150px;
+  float: left;
+  margin-top: 31px;
+}
+
+#main-body {
+  width: 450px;
+  float: right;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
+#journal-body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #66CCFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#header {
+  text-align: center;
+  padding-top: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  padding: 5px;
+}

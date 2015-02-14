@@ -1,0 +1,14 @@
+<div id="sidebar">
+  <h3>Dates</h3>
+  <hr />
+  <ul>
+  	{{#each}}
+  	  <li>
+        {{#link-to 'entry' this}}{{date}}{{/link-to}}
+      </li>
+  	{{/each}}
+  </ul>
+</div>
+<div id="main-body">
+  {{outlet}}
+</div>

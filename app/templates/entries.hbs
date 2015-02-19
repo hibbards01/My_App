@@ -1,14 +1,28 @@
-<div id="sidebar">
-  <h3>Dates</h3>
-  <hr />
-  <ul>
-  	{{#each}}
-  	  <li>
-        {{#link-to 'entry' this}}{{date}}{{/link-to}}
-      </li>
-  	{{/each}}
-  </ul>
-</div>
-<div id="main-body">
-  {{outlet}}
-</div>
+<section id="journal_body">
+  <!-- All the buttons to edit the Journals -->
+  <div id="journal-body">
+    <!-- Grab all the dates from the Journal Entries -->
+    <div id="sidebar">
+      <h3>Dates</h3>
+      <hr />
+      <ul>
+      	{{#each}}
+      	  <li>
+            {{#link-to 'entry' this}}{{date}}{{/link-to}}
+          </li>
+      	{{/each}}
+      </ul>
+      <button {{action "newEntry"}} class="button">+ New Entry</button>
+    </div>
+    <div id="main-body">
+      {{#if newEntry}}
+        <p><label>Title:</label>{{input type="text" value=title}}</p>
+        <p><label>Date:</label>{{input type="text" value=date}}</p>
+        <p><label>Entry</label>{{textarea class="textarea" value=entry}}</p>
+        <button {{action "saveEntry"}}>Save</button>
+      {{else}}
+        {{outlet}}
+      {{/if}}
+    </div>
+  </div>
+</section>

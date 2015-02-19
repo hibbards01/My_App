@@ -1,3 +1,12 @@
-<h3>{{title}}</h3>
-<hr />
-<p>{{text}}</p>
+{{#if isEditing}}
+  <p><label>Title:</label>{{input type='text' value=title}}</p>
+  <p><label>Date:</label>{{input type='text' value=date}}</p>
+  <p><label>Entry</label>{{textarea class='textarea' value=text}}</p>
+  <button {{action "doneEditing"}} class="button">Save</button>
+{{else}}
+  <h3>{{title}}</h3>
+  <hr />
+  <p>{{text}}</p>
+  <button {{action "editEntry"}} class="button">Edit Entry</button>
+  <button {{action "deleteEntry"}} class="button">Delete Entry</button>
+{{/if}}

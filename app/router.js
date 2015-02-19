@@ -6,11 +6,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.resource('journal', {path: '/'}, function() {
-		this.resource('entries', {path: '/'}, function() {
-			this.resource('entry', {path: ':entry_id'});
-		});
+	this.resource('entries', function() {
+		this.resource('entry', {path: '/:entry_id'});
+    this.resource('deleted');
+    this.resource('initial-page');
 	});
 });
+
+
 
 export default Router;

@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   color: #000;
   background-color: #780000;
-  height: 80%;
+  height: 90%;
 }
 
 body {
@@ -14,28 +14,23 @@ body {
 }
 
 .button {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 5px;
 }
 
 #sidebar {
   width: 150px;
   float: left;
-  margin-top: 31px;
 }
 
 #main-body {
   width: 450px;
   float: right;
-  word-wrap: break-word;
-  margin-top: 10px;
+  word-wrap: break-word;;
 }
 
 #journal-body {
   width: 600px;
   margin: 0 auto;
-  background-color: #66CCFF;
-  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -50,4 +45,9 @@ h3 {
 
 p {
   padding: 5px;
+}
+
+.textarea {
+  width: 430px;
+  height: 100px;
 }

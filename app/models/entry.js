@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   	title: DS.attr('string'),
-  	date: DS.attr('date'),
+  	date: DS.attr('string'),
   	text: DS.attr('string')
 }).reopenClass({
 	FIXTURES: [
@@ -10,7 +10,7 @@ export default DS.Model.extend({
 			id: 1,
 			title: "First Entry",
 			date: "2/9/15",
-			text: "Some very cool and long text. With very long text. aslkdjfalkejalksefjalksejf;alkesjfa;lsekfja;sklefa;lekfja;slkefj;aselkfja;slkefjas;elkfjs;dklf,vznwieofnakdvnsioefnawenvsdknvao;wien4f/alsn/linzoxtr"
+			text: "Some very cool and long text. With very long text. I will keep on adding some more text to see if this will wrap around the border and not keep on going on and on forever."
 		},
 		{
 			id: 2,
